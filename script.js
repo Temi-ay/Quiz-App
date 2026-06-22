@@ -10,7 +10,7 @@ const muteBtn = document.querySelector(".mute-btn");
 const QUIZ_TIME_LIMIT = 15;
 let currentTime = QUIZ_TIME_LIMIT;
 let timer = null;
-let quizCatergory = "programming";
+let quizCategory = "programming";
 let numberOfQuestions = 5;
 let currentQuestion = null;
 const questionsIndexHistory = []
@@ -75,7 +75,7 @@ const showQuizResult = () =>{
     resultContainer.style.display = "block";
     playCompletionSound();
 
-    const resultText = ` You answered <b>${correctAnswersCount}</b> out of <b>${numberOfQuestions}</b> questionss correctly. Great effort!`;
+    const resultText = ` You answered <b>${correctAnswersCount}</b> out of <b>${numberOfQuestions}</b> questions correctly. Great effort!`;
     document.querySelector(".result-message").innerHTML = resultText;
 }
 
@@ -155,7 +155,7 @@ const renderQuestion = () => {
    answerOptions.innerHTML = "";
    nextQuestionBtn.style.visibility = "hidden";
    quizContainer.querySelector(".quiz-timer").style.background = "#32313c"
-   document.querySelector(".question-text"). textContent = currentQuestion.question;
+   document.querySelector(".question-text").textContent = currentQuestion.question;
    questionStatus.innerHTML = `<b>${questionsIndexHistory.length}</b> of <b>${numberOfQuestions}</b> Questions`;
 
    currentQuestion.options.forEach((option, index)=> {
@@ -186,7 +186,7 @@ document.querySelectorAll(".category-option, .question-option").forEach(option =
 
 //reset quiz//
 const resetQuiz = () => {
-    resetTimer ();
+    resetTimer();
     correctAnswersCount = 0;
     questionsIndexHistory.length = 0;
     configContainer.style.display = "block";
