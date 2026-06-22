@@ -1,0 +1,73 @@
+!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="config-container">
+            <h2 class="config-title">Quiz Configuration</h2>
+            <div class="config-option">
+                <h4 class="option-title">Select Category</h4>
+                <div class="category-options">
+                    <button class="category-option active">Programming</button>
+                    <button class="category-option">Mathematics</button>
+                    <button class="category-option">Physics</button>
+                    <button class="category-option">Biology</button>
+                </div>
+            </div>
+            <div class="config-option">
+                <h4 class="option-title">Number of Questions</h4>
+                <div class="question-options">
+                    <button class="question-option active">5</button>
+                    <button class="question-option">10</button>
+                    <button class="question-option">15</button>
+                    <button class="question-option">20</button>
+                    <button class="question-option">25</button>
+                </div>
+            </div>
+            <button class="start-quiz-btn">Start Quiz</button>
+
+
+        </div>
+
+        <div class="quiz-container">
+            <header class="quiz-header">
+                <h2 class="quiz-title">Quiz Application</h2>
+                <div class="quiz-header-controls">
+                    <div class="quiz-timer">
+                        <span class="material-symbols-rounded">timer</span>
+                        <p class="time-duration">15s</p>
+                    </div>
+                    <button class="mute-btn" aria-label="Mute sounds">
+                        <span class="material-symbols-rounded">volume_up</span>
+                    </button>
+                </div>
+            </header>
+            <div class="quiz-content">
+                <h1 class="question-text"></h1>
+                <ul class="answer-options"></ul>
+            </div>
+            <div class="quiz-footer">
+                <p class="question-status"></p>
+                <button class="next-question-btn">
+                    Next
+                    <span class="material-symbols-rounded">arrow_right_alt</span>
+                </button>
+            </div>
+        </div>
+        <div class="result-container">
+            <img src="https://www.bing.com/th/id/OIP.M7q5rLB7AvXyBBzIXsrPLwHaFW?w=193&h=139&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" class="result-img"></img>
+            <h2 class="result-title">Quiz Completed</h2>
+            <p class="result-message">
+            </p>
+            <button class="try-again-btn">Try Again</button>
+        </div>
+
+        <script src="javascript/questions.js"></script>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
