@@ -231,7 +231,7 @@ body{
     padding: 12px 20px;
 }
 
-@media (max-width:624){
+@media (max-width: 624px){
     .config-container, 
     .quiz-container .quiz-content{
         padding: 20px;
