@@ -1,6 +1,10 @@
-# 💻😊Quiz Application
- 
+# 💻😊Quiz App
+
+## 📌Description
+
 A browser-based quiz app with category selection, a countdown timer per question, score tracking, and sound effects — built with plain HTML, CSS, and JavaScript 
+1
+
 ## ✈️Features
  
 - **Category selection** — choose from Programming, Mathematics, Physics, or Biology
@@ -13,4 +17,12 @@ A browser-based quiz app with category selection, a countdown timer per question
 - **Results screen** — shows final score with a "Try Again" option to restart
 
 ## References
-- 
+- ### [Coding Nepal](https://youtu.be/vZe4SvsnLxM?si=oL7F4uJIGqS3OjPO)
+
+## Built with
+- HTML
+- CSS
+- JAVASCRIPT
+
+## Contributors
+### [Grace](https://github.com/Temi-ay)
